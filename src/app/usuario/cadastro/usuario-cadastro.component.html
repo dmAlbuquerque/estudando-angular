@@ -1,0 +1,19 @@
+<div class="p-grid p-fluid">
+    <div class="p-col-12 p-md-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="Nome" [(ngModel)]="usuario.nome">
+        </div>
+    </div>
+    <div class="p-col-12 p-md-4">
+        <div class="p-inputgroup">
+            <input type="email" pInputText placeholder="Email" [(ngModel)]="usuario.email">
+        </div>
+    </div>
+    
+    <div>
+        <button pButton (click)="salvar()" label="Salvar"></button>
+    </div>
+
+
+    {{usuario | json}}
+</div>
